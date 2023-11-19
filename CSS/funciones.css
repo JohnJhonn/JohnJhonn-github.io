@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos adicionales para hacer la página más atractiva */
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #007bff;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Media query para estilos responsivos */
+@media only screen and (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

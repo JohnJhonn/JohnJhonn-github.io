@@ -1,0 +1,97 @@
+body {
+    background-color: var(--color-background-body);
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(../IMAGE/representacion-3d-bloques-abstractos-formulas-matematicas-ubicadas-espacio-virtual_232104-827.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.return{
+    border: 2px solid #000000;
+    padding: 10px;
+    background-color: #323847;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; 
+}
+.return:hover{
+    background-color: #1a1a1a;
+}
+
+.calculator {
+    background: linear-gradient(140deg, #000000, #000000);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ffffff; /* Add this line to set a white border */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.calculator:hover {
+    transform: scale(1.05);
+}
+
+.screen {
+    height: 200px;
+    padding-top: 20px;
+    color: #bbbbbb;
+    font-size: 50px;
+    text-align: right;
+}
+
+.screen .current {
+    color: #fff;
+    font-size: 80px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.buttons button {
+    border-radius: 10px;
+    border: none;
+    font-size: 1.5em;
+    color: #efefef;
+    background: linear-gradient(140deg, #262b39, #323847);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+                -5px -5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease-in-out;
+}
+
+.buttons button:hover {
+    transform: scale(1.1);
+}
+
+.buttons button:nth-child(17) {
+    grid-column: span 2;
+}
+
+.buttons button:nth-child(-n+3) {
+    background: linear-gradient(140deg, #3b424d, #5d697a);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+                -5px -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttons button:nth-child(4n),
+.buttons button:nth-child(19) {
+    background: linear-gradient(140deg, #bc5a17, #e09121);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+                -5px -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttons button:active {
+    box-shadow: none;
+    transform: scale(0.95);
+}

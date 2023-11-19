@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    width: 100%;
+    height: 110px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: flex;
+    justify-content: space-between; /* Para separar los elementos a los lados */
+    align-items: center;
+}
+
+.menu {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+/* Estilo para los submenús */
+.submenu-content {
+    display: none;
+    position: absolute;
+    background-color: #1a1a1a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.submenu:hover .submenu-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.submenu-content a:hover {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento del menú */
+    margin-left: auto; /* Mueve "Cuenta" a la esquina superior derecha */
+}
+
+nav ul li a {
+    color: #a5a5a5;
+    text-decoration: none;
+    position: relative;
+    
+}
+
+li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #e6e6e6;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    display: block;
+}
+
+li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Estilos base (puedes reutilizar del ejemplo anterior) */
+
+/* Estilos adicionales para la sección de contacto */
+section.contacto {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

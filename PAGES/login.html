@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es-la" class="no-js" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Únase</title>
+    <link rel="stylesheet" href="../CSS/styleslogin.css">
+</head>
+<body>
+        <!-- Encabezado de la página -->
+        <header>
+            <div class="container">
+                <h1>MathScience</h1>
+                <!-- Barra de navegación -->
+                <nav>
+                    <ul class="menu">
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li class="submenu">
+                            <a href="#">Productos</a>
+                            <ul class="submenu-content">
+                                <li><a href="/PAGES/producto1.html">Calculadora basica online</a></li>
+                                <li><a href="PAGES/producto2.html">Producto 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/PAGES/descargar.html">Descargar</a></li>
+                        <li class="submenu">
+                            <a href="#">Informacion</a>
+                            <ul class="submenu-content">
+                                <li><a href="PAGES/informacion1.html">Informacion 1</a></li>
+                                <li><a href="PAGES/informacion2.html">Informacion 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="login.html">Cuenta</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <div role="navigation" id="OfficialHeaderWrapper" class="headerExternal"></div>
+    <form id="registrationForm">
+        <div class="container">
+            <div class="container_1">
+                <h1>MathScience</h1>
+                <div class="title">¿Aún no tienes cuenta?</div>
+                <div class="content">Regístrate para acceder a todas las funciones de nuestro servicio. ¡Es gratis!</div>
+                <div class="icon">
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-telegram'></i>
+                    <i class='bx bxl-github'></i>
+                </div>
+            </div>
+            <div class="container_2">
+                <h1>Registro</h1>
+                <div class="form_control">
+                    <input id="username" type="text" placeholder="Usuario">
+                    <small></small>
+                    <span></span>
+                </div>
+                <div class="form_control">
+                    <input id="email" type="email" placeholder="Email">
+                    <small></small>
+                    <span></span>
+                </div>
+                <div class="form_control">
+                    <input id="password" type="password" placeholder="Contraseña">
+                    <small></small>
+                    <span></span>
+                </div>
+                <div class="form_control">
+                    <input id="password_2" type="password" placeholder="Ingresa tu contraseña nuevamente">
+                    <small></small>
+                    <span></span>
+                </div>
+                <button type="button" onclick="validateForm()">Registro</button>
+                <div class="content">¿Ya tienes una cuenta?
+                    <a href="#">Acceso</a>
+                </div>
+            </div>
+        </div>
+    </form>
+    
+    <script src="../JAVASCRIPT/login.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 MathScience. Todos los derechos reservados. | <a href="mailto:info@MathScience.com">web.mega@hotmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
